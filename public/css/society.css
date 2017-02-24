@@ -1,0 +1,133 @@
+a {
+    color: #777;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #f4645f;
+}
+
+a:focus {
+    color: #f4645f;
+}
+
+input[type="text"] {
+    padding: 4px 10px;
+}
+
+.user-img {
+    margin: 0 auto;
+    width: 140px;
+    height: 140px;
+    display: block;
+}
+
+.user-wrapper {
+    padding: 10px 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+.user-portrait {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 5px;
+}
+
+.society-item {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.society-item .media-title {
+    color: black;
+    padding-top: 2px;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.user-time {
+    color: #bbb;
+}
+
+.society-item .user-content p {
+    max-height: 83px;
+    font-weight: normal;
+    white-space: normal;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.user-content p img {
+    display: none;
+}
+
+.user-content p img:first-child {
+    height: 83px;
+    padding-right: 10px;
+    float: left;
+    display: inline;
+}
+
+.society-item .media-bottom {
+    margin-top: 5px;
+}
+
+.flex-column {
+    justify-content: center;
+}
+
+.editor-wrapper textarea {
+    height: 450px;
+}
+
+.detail-content img {
+    max-width: 100%;
+    display: block;
+}
+
+#comment, #thumbs {
+    cursor: pointer;
+}
+
+#comment:hover, #thumbs:hover {
+    font-weight: normal;
+}
+
+.comment-input-wrapper {
+    margin-top: 10px;
+}
+
+.comment-item>.media-left{
+    white-space: nowrap;
+}
+
+.comment-item .media-body p {
+    white-space: normal;
+    word-break: break-all;
+}
+
+.subject:hover, .object:hover {
+    color: #f4645f;
+    cursor: pointer;
+}
+
+.theme {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"]#title.has-error {
+    border-color: #f4645f;
+}
+
+input[type="text"].has-error {
+    border-color: #f4645f;
+}
+
+@media (max-width: 767px) {
+    .editor-wrapper textarea {
+        height: 300px;
+    }
+}

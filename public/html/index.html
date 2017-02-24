@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link type="text/css" rel="stylesheet" href="../plugins/bootstrap-3.3.5/dist/css/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="../plugins/font-awesome-4.6.3/css/font-awesome.min.css"/>
+    <link type="text/css" rel="stylesheet" href="../css/common.css"/>
+    <!--    <link type="text/css" rel="stylesheet" href="../css/header.css"/>-->
+    <link type="text/css" rel="stylesheet" href="../css/index.css"/>
+
+    <script type="text/javascript" rel="script" src="../js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" rel="script" src="../plugins/bootstrap-3.3.5/dist/js/bootstrap.min.js"></script>
+
+    <title>HyperRUN--主页</title>
+</head>
+<body>
+<header class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">HyperRUN</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="sports.html">运动</a></li>
+                <li><a href="activity_all.html">活动</a></li>
+                <li><a href="society.html">社区</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user"></i> 用户(HermC) <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="user.html"><i class="fa fa-pencil"></i> &nbsp;个人设置</a></li>
+                        <!--                        <li><a href="#"><i class="fa fa-users"></i> 我的好友</a></li>-->
+                        <li><a href="#"><i class="fa fa-power-off"></i> &nbsp;退出登录</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var i = 0;
+
+        if(i!=undefined&&i!=null&&i!=-1){
+            var navbar_nav_list = $(".navbar-nav").find("li");
+            $(navbar_nav_list[i]).addClass("active");
+        }
+    </script>
+</header>
+<div class="container">
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+    <div class="row main-content">
+        <div class="col-sm-4 hidden-xs content-left">
+            <div class="widget">
+                <div class="title">
+                    <h4>用户</h4>
+                </div>
+                <img class="user-img img-thumbnail" src="../img/default.jpg" alt="..."/>
+                <div class="user-wrapper">
+                    <a href="user.php" target="_self">HermC</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 hidden-xs">
+
+        </div>
+        <div class="col-sm-8 col-xs-12 container content-right">
+            <div class="content">
+                <div class="title">
+                    <h3>总体运动情况</h3>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4 info-wrapper">
+                        <div class="info">
+                            <h2>已运动</h2>
+                            <h1>20</h1>
+                            <p>天</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4 info-wrapper">
+                        <div class="info">
+                            <h2>共燃烧</h2>
+                            <h1>1000</h1>
+                            <p>卡</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4 info-wrapper">
+                        <div class="info">
+                            <h2>累计里程</h2>
+                            <h1>100</h1>
+                            <p>公里</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<footer>
+    <div class="container">
+        <p class="text-muted">Designed By HermC, Copyright &copy; HermC</p>
+    </div>
+</footer>
+</body>
+</html>
